@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Shobhna Verma Project -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <!-- Linking the external CSS file for styling -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Expense Tracker</h1>
+    </header>
+    
+    <!-- Input section for adding a new expense -->
+    <div class="inputSection">
+      <input type="text" id="expenseDescription" placeholder="Expense Description">
+      <input type="number" id="expenseAmount" placeholder="Amount">
+      <select id="expenseCategory">
+        <option value="Fashion">Fashion</option>
+        <option value="Food">Food</option>
+        <option value="Groceries">Groceries</option>
+        <option value="Accommodation">Accommodation</option>
+      </select>
+      <!-- Button to trigger adding expense -->
+      <button id="addExpenseButton">Add Expense</button>
+    </div>
+
+    <!-- List where all expenses will be displayed -->
+    <div class="expenseList">
+      <ul id="expenseList">
+        <!-- Expense items will be dynamically added here -->
+      </ul>
+    </div>
+
+    <!-- Displaying the total of all expenses -->
+    <div class="total">
+      <h3>Total Expenses: $<span id="totalAmount">0.00</span></h3>
+    </div>
+  </div>
+
+  <!-- Linking the external JavaScript file for functionality -->
+  <script src="script.js"></script>
+</body>
+</html>
